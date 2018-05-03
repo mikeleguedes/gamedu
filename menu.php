@@ -23,7 +23,7 @@
                     <li class="active">
                         <a href="consultarRanking.php"> <i class="menu-icon fa fa-cubes"></i>Ranking de pontuação </a>
                     </li>
-                    <h3 class="menu-title">Tópicos</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">Tópicos</h3>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-user"></i>Usuário</a>
                         <ul class="sub-menu children dropdown-menu">
@@ -59,7 +59,7 @@
                         </ul>
                     </li>
 
-                    <h3 class="menu-title">Feedback</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">Feedback</h3>
                     <li>
                         <a href="feedback.php"> <i class="menu-icon fa fa-reply"></i>Enviar Feedbacks </a>
                     </li>
@@ -67,7 +67,7 @@
                         <a href="meusfeedbacks.php"> <i class="menu-icon fa fa-envelope-open"></i>Meus Feedbacks </a>
                     </li>
                     
-                    <h3 class="menu-title">Notificação</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">Notificação</h3>
                     <li>
                         <a href="notificacoes.php"> <i class="menu-icon fa fa-envelope"></i>Enviar notificações </a>
                     </li>
