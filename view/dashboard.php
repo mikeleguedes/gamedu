@@ -25,8 +25,12 @@
 	?>
 	<fieldset>
 		<div class="container-fluid">
-			<div class="col-sm-10">
-				
+			<div class="breadcrumbs">
+			 <div class="content mt-3">
+			  <div class="col-sm-10">
+
+			  </div>
+			 </div>
 			</div>
 		</div>
 	</fieldset>

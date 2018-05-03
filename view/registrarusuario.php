@@ -33,48 +33,46 @@
   ?>
 
   <fieldset>
-     <div class="form-group">
+     <div class="form-group text-">
       <label class="col-md-4 control-label" for="nomeusuario">Nome completo</label>  
-      <div class="col-md-5">
-        <input id="nomeusuario" name="nomeusuario" type="text" placeholder="" class="form-control input-md" required="">
+      <div class="">
+        <input class="form-control input col-md-5" name="nomeusuario" type="text">
 
-      </div>
+     
     </div>
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="nomereduzido">Nome reduzido</label>  
-      <div class="col-md-4">
-        <input id="nomereduzido" name="nomereduzido" type="text" placeholder="" class="form-control input-md" required="" >
+      <div class="">
+        <input class="form-control input col-md-5" name="nomereduzido" type="text" required="" >
 
       </div>
     </div>
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="cpfusuario">CPF</label>  
-      <div class="col-md-3">
-        <input id="cpfusuario" name="cpfusuario" type="text" placeholder="sem pontos ou traços" class="form-control input-md" required="" maxlength="11">
+      <div class="">
+        <input class="form-control input col-md-5" name="cpfusuario" type="text" placeholder="sem pontos ou traços" maxlength="11">
 
       </div>
     </div>
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="senha">Senha</label>  
-      <div class="col-md-4">
-        <input id="senha" name="senha" type="password" placeholder="" class="form-control input-md" required="" >
+      <div class="">
+        <input class="form-control input col-md-5" name="senha" type="password" required="" >
 
       </div>
     </div>
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="tipousuario_idtipousuario">Tipo de Usuário</label>
-      <div class="col-md-2">
-        <select name="tipousuario_idtipousuario" id="tipousuario_idtipousuario" class="form-control" >
+        <select name="tipousuario_idtipousuario" class="form-control input col-md-2" >
          <option >Escolha... </option>
          <option value="1" > Professor</option>
          <option value="2" > Técnico</option>
          <option value="3" > Administrador</option>
        </select>	
-     </div>
    </div>
 
 
@@ -294,14 +292,12 @@ $( "#Clique<?php echo $linha["idusuario"]; ?>" ).click(function() {
 
 
     <!-- Right Panel -->
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/main.js"></script>
 
-
-    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
-    <script src="assets/js/dashboard.js"></script>
-    <script src="assets/js/widgets.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/widgets.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 </body>
 </html>
