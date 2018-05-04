@@ -30,11 +30,8 @@
             <li>
                 <a href="../view/registraralunos.php"> <i class="menu-icon fa fa-users"></i>Registrar alunos </a>
             </li>            
-            <li class="menu-item-has-children dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Atividade</a>
-                <ul class="sub-menu children dropdown-menu">
-                    <li><a href="registraratividades.php">Registrar atividade</a></li>
-                </ul>
+            <li>     
+               <a href="registraratividades.php"> <i class="menu-icon fa fa-book"></i> Registrar atividade</a></
             </li>
             <li class="menu-item-has-children dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-address-card"></i>Disciplina</a>
@@ -43,12 +40,8 @@
                     <li><a href="registrardisciplina_professor.php">Víncular disciplina</a></li>
                 </ul>
             </li>
-            <li class="menu-item-has-children dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-graduation-cap"></i>Turma</a>
-                <ul class="sub-menu children dropdown-menu">
-                    <li><a href="registrarturmas.php">Registrar turma</a></li>
-                    <li><a href="visualizarturmas.php">Turmas existentes</a></li>
-                </ul>
+            <li>
+                <a href="registrarturmas.php"><i class="menu-icon fa fa-graduation-cap"></i> Registrar turma</a>
             </li>
 
             <h3 class="menu-title">Feedback</h3>
