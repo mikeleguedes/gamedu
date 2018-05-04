@@ -145,11 +145,11 @@ if($stmt->rowCount() >0){
                   <tbody>
                           <tr>
                             <td align="center">
-                              <a class="btn btn-success"  href="php/alterarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>"><em class="fa fa-pencil"></em></a>
-                              <a target="_blank" href="php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>"id="Clique<?php echo $linha["idusuario"]; ?>" class="btn btn-danger" ><em class="fa fa-trash"></em></a>
+                              <a class="btn btn-success"  href="../php/alterarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>"><em class="fa fa-pencil"></em></a>
+                              <a target="_blank" href="../php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>"id="Clique<?php echo $linha["idusuario"]; ?>" class="btn btn-danger" ><em class="fa fa-trash"></em></a>
                            <div id="escondido<?php echo $linha["idusuario"]; ?>" style="display:none;">
 						   Tem certeza que deseja deletar esse Usuario? <?php echo ($linha["nomeusuario"]); ?> ? <br>
-    <a  id="Clique" class="btn btn-success" href="php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>"><em class="fa fa-check"></em></a>
+    <a  id="Clique" class="btn btn-success" href="../php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>"><em class="fa fa-check"></em></a>
 </div>
 <script>
 $( "#Clique<?php echo $linha["idusuario"]; ?>" ).click(function() {
@@ -233,11 +233,11 @@ if($stmt->rowCount() >0){
                   <tbody>
                           <tr>
                             <td align="center">
-                              <a class="btn btn-success"  href="php/alterarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>"><em class="fa fa-pencil"></em></a>
-                              <a target="_blank" href="php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>" id="Clique<?php echo $linha["idusuario"]; ?>" class="btn btn-danger" ><em class="fa fa-trash"></em></a>
+                              <a class="btn btn-success"  href="../php/alterarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>"><em class="fa fa-pencil"></em></a>
+                              <a target="_blank" href="../php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>" id="Clique<?php echo $linha["idusuario"]; ?>" class="btn btn-danger" ><em class="fa fa-trash"></em></a>
                            <div id="escondido<?php echo $linha["idusuario"]; ?>" style="display:none;">
 						   Tem certeza que deseja deletar o Usuário <?php echo ($linha["nomeusuario"]); ?> ? <br>
-    <a  id="Clique" class="btn btn-success" href="php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>"><em class="fa fa-check"></em></a>
+    <a  id="Clique" class="btn btn-success" href="../php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>"><em class="fa fa-check"></em></a>
 </div>
 <script>
 $( "#Clique<?php echo $linha["idusuario"]; ?>" ).click(function() {

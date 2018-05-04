@@ -24,12 +24,8 @@
                 <a href="consultarRanking.php"> <i class="menu-icon fa fa-cubes"></i>Ranking de pontuação </a>
             </li>
             <h3 class="menu-title">Tópicos</h3>
-            <li class="menu-item-has-children dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-user"></i>Usuário</a>
-                <ul class="sub-menu children dropdown-menu">
-                    <li><a href="registrarusuario.php">Registrar usuário</a></li>
-                    <li><a href="visualizarusuario.php">Usuários existentes</a></li>
-                </ul>
+            <li>
+                <a href="registrarusuario.php"> <i class="menu-icon fa fa-user"></i>Registrar usuários </a>
             </li>
             <li class="menu-item-has-children dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Aluno</a>
