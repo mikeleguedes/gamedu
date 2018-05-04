@@ -29,7 +29,7 @@ if ( $contagem == 1  ) {
 session_destroy($_SESSION['errologin']);
 
 
-header('Location: ../dashboard.php');
+header('Location: ../view/dashboard.php');
 
   
 }else{
