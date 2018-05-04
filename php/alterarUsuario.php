@@ -83,7 +83,6 @@ foreach($resultado as $linha){
 </div>
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="cpf">Disciplinas</label>  
   <div class="col-md-8">
 <!-- Select Basic -->
 <?php

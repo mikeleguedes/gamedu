@@ -21,19 +21,15 @@
                 <a href="dashboard.php"> <i class="menu-icon fa fa-home"></i>Página Inicial </a>
             </li>
             <li class="active">
-                <a href="consultarRanking.php"> <i class="menu-icon fa fa-cubes"></i>Ranking de pontuação </a>
+                <a href="../view/consultarRanking.php"> <i class="menu-icon fa fa-cubes"></i>Ranking de pontuação </a>
             </li>
             <h3 class="menu-title">Tópicos</h3>
             <li>
-                <a href="registrarusuario.php"> <i class="menu-icon fa fa-user"></i>Registrar usuários </a>
+                <a href="../view/registrarusuario.php"> <i class="menu-icon fa fa-user"></i>Registrar usuários </a>
             </li>
-            <li class="menu-item-has-children dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Aluno</a>
-                <ul class="sub-menu children dropdown-menu">
-                    <li><a href="registraralunos.php">Registrar aluno</a></li>
-                    <li><a href="visualizaraluno.php">Alunos existentes</a></li>
-                </ul>
-            </li>
+            <li>
+                <a href="../view/registraralunos.php"> <i class="menu-icon fa fa-users"></i>Registrar alunos </a>
+            </li>            
             <li class="menu-item-has-children dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-book"></i>Atividade</a>
                 <ul class="sub-menu children dropdown-menu">
