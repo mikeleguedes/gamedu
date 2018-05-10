@@ -21,7 +21,7 @@
 <body>
  <?php include '../menu.php';?>
 
-<form class="form-horizontal" method="post" action="php/CadastrarUsuario.php" >
+<form class="form-horizontal" method="post" action="../php/CadastrarUsuario.php" >
 
   <?php 
       //Erros gerados no cadastro/alteração
@@ -287,11 +287,11 @@ $( "#Clique<?php echo $linha["idusuario"]; ?>" ).click(function() {
  
         
 
-        </div> <!-- .content -->
-    </div><!-- /#right-panel -->
+        </div> 
+    </div>
 
 
-    <!-- Right Panel -->
+    <!-- Links -->
     <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>
   <script src="../assets/js/plugins.js"></script>
   <script src="../assets/js/main.js"></script>
