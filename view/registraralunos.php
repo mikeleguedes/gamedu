@@ -160,11 +160,11 @@ if(isset($_SESSION['erromatricula'])){
 
 <!-- Form Name -->
 
-
+<div classe="row">
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic">Disciplina</label>
-  <div class="col-md-4">
+  <label class="col-md-10 control-label" for="selectbasic">Disciplina</label>
+  <div class="col-md-10">
     <select id="disciplinaList" name="disciplinaList" class="form-control">
 	<?php
   //Seleciona todas disciplinas e lista no form
@@ -199,7 +199,7 @@ if(isset($_SESSION['erromatricula'])){
     <input  type="" ng-click="listarAlunos();" style="margin-left: 0px;margin-top:5%;" class="btn btn-primary btn-info" value="Listar">  
   </div>
 </div>
-
+</div>
 </fieldset>
 </form>
 
@@ -257,11 +257,11 @@ if($stmt->rowCount() >0){
                   <tbody>
                           <tr >
                             <td align="center" class="col col-xs-4">
-                              <a class="btn btn-success"  href="php/alterarAluno.php?idaluno=<?php echo $linha['idaluno']; ?>"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-success"  href="../php/alterarAluno.php?idaluno=<?php echo $linha['idaluno']; ?>"><em class="fa fa-pencil"></em></a>
                               <a target="_blank" id="Clique<?php echo $linha["idaluno"]; ?>" class="btn btn-danger" ><em class="fa fa-trash"></em></a>
                            <div id="escondido<?php echo $linha["idaluno"]; ?>" style="display:none;">
 						   Tem certeza que dejesa deletar o Aluno <?php echo ($linha["nomealuno"]); ?> ? <br>
-    <a  id="Clique" class="btn btn-success" href="php/deletarAluno.php?idaluno=<?php echo $linha['idaluno']; ?>&nomealuno=<?php echo $linha['nomealuno']; ?>"><em class="fa fa-check"></em></a>
+    <a  id="Clique" class="btn btn-success" href="../php/deletarAluno.php?idaluno=<?php echo $linha['idaluno']; ?>&nomealuno=<?php echo $linha['nomealuno']; ?>"><em class="fa fa-check"></em></a>
 </div>
 <script>
 $( "#Clique<?php echo $linha["idaluno"]; ?>" ).click(function() {
@@ -337,11 +337,11 @@ $( "#Clique<?php echo $linha["idaluno"]; ?>" ).click(function() {
                     
                           <tr >
                             <td align="center">
-                              <a class="btn btn-success"  href="php/alterarAluno.php?idaluno={{x.idaluno}}"><em class="fa fa-pencil"></em></a>
+                              <a class="btn btn-success"  href="../php/alterarAluno.php?idaluno={{x.idaluno}}"><em class="fa fa-pencil"></em></a>
                               <a target="_blank" ng-click="excluiraluno(x.idaluno);" id="Clique{{x.idaluno}}" class="btn btn-danger" ><em class="fa fa-trash"></em></a>
                            <div id="escondido{{x.idaluno}}" style="display:none;">
 						   Tem certeza que dejesa deletar o Aluno {{x.nomealuno}}? <br>
-    <a  id="Clique" class="btn btn-success" href="php/deletarAluno.php?idaluno={{x.idaluno}}&nomealuno={{x.nomealuno}}"><em class="fa fa-check"></em></a>
+    <a  id="Clique" class="btn btn-success" href="../php/deletarAluno.php?idaluno={{x.idaluno}}&nomealuno={{x.nomealuno}}"><em class="fa fa-check"></em></a>
 </div>
 
 						   

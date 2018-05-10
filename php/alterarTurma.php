@@ -44,6 +44,13 @@ foreach($resultado as $linha){
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+<style>
+form{
+margin-left:25%;
+
+}
+
+</style>
 </head>
 
 <body>
@@ -86,7 +93,7 @@ foreach($resultado as $linha){
 </div>
 
 </fieldset>
-<button id="singlebutton" name="singlebutton"  style="margin-left:45%;"    class="btn btn-success">Alterar</button>
+<button id="singlebutton" name="singlebutton"  style="margin-left:15%;border-radius:5%;"    class="btn btn-success">Alterar</button>
 </form>
 	
 

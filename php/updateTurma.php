@@ -27,7 +27,7 @@ $stmt -> bindParam(3,$idturma);
 $stmt->execute(); 
 if($stmt->rowCount() >0){
 	echo "<script language= 'JavaScript'>
-location.href='../mensagem.php?msg=Alterado&url=registrarturmas.php'
+location.href='../view/mensagem.php?msg=Alterado&url=registrarturmas.php'
 </script>";
 		
 	}else{
