@@ -15,8 +15,13 @@
   <link rel="stylesheet" href="../assets/css/themify-icons.css">
   <link rel="stylesheet" href="../assets/scss/style.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+<style>
+ form{
+  margin-left: 25%;
+ } 
+</style>
 </head>
 <body>
  <?php include '../menu.php';?>
@@ -291,13 +296,13 @@ $( "#Clique<?php echo $linha["idusuario"]; ?>" ).click(function() {
     </div>
 
 
-    <!-- Links -->
-    <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>
-  <script src="../assets/js/plugins.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <!-- Links -->
+  <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="../assets/js/plugins.js"></script>
+<script src="../assets/js/main.js"></script>
 
-  <script src="../assets/js/dashboard.js"></script>
-  <script src="../assets/js/widgets.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+<script src="../assets/js/dashboard.js"></script>
+<script src="../assets/js/widgets.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 </body>
 </html>

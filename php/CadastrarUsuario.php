@@ -1,7 +1,7 @@
-<?php include 'php/VerificarSession.php'?>
+<?php include '../php/VerificarSession.php'; ?>
 <?php
 try{
-	include 'Conexao.php';
+	include '../php/Conexao.php';
 	 $nome = $_POST['nomeusuario'];
 	 $nomereduzido = $_POST['nomereduzido'];
 	 $cpf= $_POST['cpfusuario'];

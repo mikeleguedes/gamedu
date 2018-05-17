@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="../assets/scss/style.css">
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+ <style>
+ form{
+  margin-left: 45%;
+ } 
+</style> 
 </head>
 
 <body>  
@@ -51,9 +56,8 @@
 
         <!-- Select Basic -->
         <div class="form-group">
-          <label class="col-md-8 control-label" for="selectbasic">Turma</label>
-          <div class="col-md-8">
-            <select id="turmaList" name="turmaList" class="form-control"> 
+          <label class="col-md-7 control-label" for="selectbasic">Turma</label>
+            <select name="turmaList" class="form-control"> 
              <?php
   //Seleciona todas disciplinas e lista no form
              include '../php/Conexao.php';
@@ -81,13 +85,11 @@
             ?> 
 
           </select>
-        </div>
       </div>
 
 
       <div class="form-group">
-        <label class="col-md-8 control-label" for="selectbasic">Disciplina</label>
-        <div class="col-md-8">
+        <label class="col-md-7 control-label" for="selectbasic">Disciplina</label>
           <select id="disciplinaList" name="disciplinaList" class="form-control">
             <?php
   //Seleciona todas disciplinas e lista no form
@@ -118,7 +120,6 @@
             ?> 
             <input type="submit" style="margin-left:15%;margin-top:5%;" class="btn btn-primary btn-info" value="Listar">  
           </select>
-        </div>
       </div>
 
 

@@ -67,8 +67,12 @@ listarTodosAlunos();
 
 </script>
 
-
 <script language="JavaScript" src="js/FormatarDados.js"></script>
+<style>
+form{
+  margin-left: 25%;
+}  
+</style>
 </head>
 <body ng-app="myApp" ng-controller="alunos">
 <div ng-repeat="x in myData ">
@@ -96,16 +100,16 @@ if(isset($_SESSION['erromatricula'])){
 ?>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="nome">Nome</label>  
-  <input class="form-control input col-md-4" name="nome" type="text" required="">
+  <label class="col-md-2 control-label" for="nome">Nome</label>  
+  <input class="form-control input col-md-5" name="nome" type="text" required="">
 </div>
 
 
 <!-- lista no select as linhas nometurma e turnoturma da tabela turma   -->
 
 <div class="form-group">
-  <label class="col-md-4 control-label" for="turma">Turma</label>
-    <select id="turma" name="turma" class="form-control input col-md-4">
+  <label class="col-md-2 control-label" for="turma">Turma</label>
+    <select id="turma" name="turma" class="form-control input col-md-5">
       <?php
   include '../php/Conexao.php';
   $stmt = $conexao->prepare("SELECT * FROM turma ");
@@ -124,8 +128,8 @@ if(isset($_SESSION['erromatricula'])){
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="matricula">Matricula</label>  
-  <input class="form-control input col-md-4" name="matricula" type="text" required="" maxlength="13" >   
+  <label class="col-md-2 control-label" for="matricula">Matricula</label>  
+  <input class="form-control input col-md-5" name="matricula" type="text" required="" maxlength="13" >   
 </div>
 
 
@@ -163,7 +167,7 @@ if(isset($_SESSION['erromatricula'])){
 <div classe="row">
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-10 control-label" for="selectbasic">Disciplina</label>
+  <label class="col-md-5 control-label" for="selectbasic">Disciplina</label>
   <div class="col-md-10">
     <select id="disciplinaList" name="disciplinaList" class="form-control">
 	<?php
@@ -196,7 +200,7 @@ if(isset($_SESSION['erromatricula'])){
       
     </select>
 
-    <input  type="" ng-click="listarAlunos();" style="margin-left: 0px;margin-top:5%;" class="btn btn-primary btn-info" value="Listar">  
+    <input  type="" ng-click="listarAlunos();" style="border-radius: 5px;margin-top:5%;" class="btn btn-primary btn-info" value="Listar">  
   </div>
 </div>
 </div>
