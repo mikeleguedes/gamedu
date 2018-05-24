@@ -59,11 +59,9 @@ foreach($resultado as $linha){
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="nomereduzido">Nome reduzido</label>  
-  <div class="col-md-4">
-  <input id="nomereduzido" name="nomereduzido" type="text" placeholder=""  value="<?php echo $linha['nomereduzido'] ?>" class="form-control input-md" required="">
+  <label lass="form-control input col-md-3" for="nomereduzido">Nome reduzido</label>  
+  <input name="nomereduzido" type="text" value="<?php echo $linha['nomereduzido'] ?>" class="form-control input col-md-4" required="">
     
-  </div>
 </div>
 
 <div class="form-group">

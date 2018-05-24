@@ -34,10 +34,8 @@ include '../php/Conexao.php';
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/themify-icons.css">
   <link rel="stylesheet" href="../assets/scss/style.css">
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
+    
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     
     <script type="text/javascript">
     
@@ -151,8 +149,6 @@ include '../php/Conexao.php';
                 margin-bottom: 20px;
             }
 
-/* FONT AWESOME & not necessary for functions */
-@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
 body {
     
@@ -162,6 +158,7 @@ body {
 /*REQUIRED*/
 .carousel-row {
     margin-bottom: 10px;
+    margin-left: 20px;  
 }
 
 .slide-row {
@@ -175,45 +172,6 @@ body {
 }
 
 
-.slide-carousel {
-    width: 20%;
-    float: left;
-    display: inline-block;
-}
-
-.slide-carousel .carousel-indicators {
-    margin-bottom: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .5);
-}
-
-.slide-carousel .carousel-indicators li {
-    border-radius: 0;
-    width: 20px;
-    height: 6px;
-}
-
-.slide-carousel .carousel-indicators .active {
-    margin: 1px;
-}
-
-.slide-content {
-    position: absolute;
-    top: 0;
-    left: 20%;
-    display: block;
-    float: left;
-    width: 80%;
-    max-height: 76%;
-    padding: 1.5% 2% 2% 2%;
-    overflow-y: auto;
-}
-
-.slide-content h4 {
-    margin-bottom: 3px;
-    margin-top: 0;
-}
-
 .slide-footer {
     position: absolute;
     bottom: 0;
@@ -223,22 +181,6 @@ body {
     margin: 1%;
 }
 
-/* Scrollbars */
-.slide-content::-webkit-scrollbar {
-  width: 5px;
-}
- 
-.slide-content::-webkit-scrollbar-thumb:vertical {
-  margin: 5px;
-  background-color: #999;
-  -webkit-border-radius: 5px;
-}
- 
-.slide-content::-webkit-scrollbar-button:start:decrement,
-.slide-content::-webkit-scrollbar-button:end:increment {
-  height: 5px;
-  display: block;
-}
     </style>
 	
 </head>
@@ -253,7 +195,7 @@ foreach($resultado as $linha){?>
 
 <!--CONTEUDO AQUI -->
 <div class="row">
-   <div class="col-md-12"></div>
+   <div class="col-md-12">
     <!-- Begin of rows -->
     <div class="row carousel-row">
         <div class="col-md-12 slide-row">
@@ -268,7 +210,7 @@ foreach($resultado as $linha){?>
                 </div>
 
                 
-             <input type="hidden" id="idaluno" name="idaluno" value="<?php echo $linha['idaluno'];?>"></input>
+             <input type="hidden" name="idaluno" value="<?php echo $linha['idaluno'];?>"></input>
             </div>
             <div class="col-md-6">
                 <h4><?php echo $linha['nomealuno'];?></h4>
@@ -284,12 +226,12 @@ foreach($resultado as $linha){?>
             <div class="slide-footer">
                 <span class="pull-right buttons">
            
-                    <a  href="meusfeedbacksdetalhados.php?idaluno=<?php echo $linha['idaluno']?>" style="border-left-width: 5px;padding-right: 50px;padding-bottom: 20px;" 
+                    <a  href="meusfeedbacksdetalhados.php?idaluno=<?php echo $linha['idaluno']?>" 
                        class="btn btn-sm btn-primary" type="submit"> Feedbacks do aluno</a>
                 </span>
             </div>
         </div>
-    </div>
+
    
 </div>
 

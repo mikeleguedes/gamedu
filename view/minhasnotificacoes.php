@@ -1,7 +1,7 @@
 <!doctype html>
 <html >
 <head>
-<?php include '../php/VerificarSession.php'?>
+<?php include '../php/VerificarSession.php';?>
 <?php  
    
 include '../php/Conexao.php'; 
@@ -20,7 +20,7 @@ include '../php/Conexao.php';
 ?>
 
 	 <meta charset="utf-8">
-    <head><?php include '../php/VerificarSession.php'?>
+    <head><?php include '../php/VerificarSession.php';?>
 
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,28 +38,18 @@ include '../php/Conexao.php';
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+<style>
 
+</style>
 
 </head>
     
 <body>
 
-<div class="wrapper">
-    <div class="sidebar" data-color="green" >
-
-    <!--
-
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
-
-    	 <?php include '../menu.php'?>
+    	 <?php include '../menu.php';?>
 
     <div class="main-panel">
         <?php
-
-
 
 
 
@@ -67,13 +57,13 @@ include '../php/Conexao.php';
  
 
 <div class="container">
-          <div class="row">
+          <div class="row pull-right">
            <div id="custom-search-input">
               <div class="input-group col-md-12">
                 <input type="text" class="  search-query form-control" placeholder="Pesquise por notificações" />
                   <span class="input-group-btn">
                     <button class="btn btn-success" type="button">
-                      <span class=" glyphicon glyphicon-search"></span>
+                      <span class="ti-search"></span>
                     </button>
                   </span>
               </div>
@@ -91,13 +81,11 @@ foreach($resultado as $linha){?>
   
     
     <div class="row">
-        <div class="col-sm-12">
-            <div class="[ panel panel-default ] panel-google-plus .col-md-4">
-              
+        <div class="col-sm-12 ">
                 
-                <div class="panel-heading .col-md-5" style="padding-left: 30px;
+                <div class="panel-heading" style="padding-left: 30px;
 ">
-                    <img class="[ img-circle ] " src="<?php echo $linha['imagem'];?>"  width="60" height="60" />
+                    <img class="img-circle " src="<?php echo $linha['imagem'];?>"  width="60" height="60" />
                     <h3>Prof: <?php echo $linha['nomereduzido'];?></h3>
                     <h5><span>Enviado em </span> - <span><?php echo $linha['datan'];?></span> </h5>
 		   <h3><?php echo $linha['titulonotificacao'];?></h3>
@@ -110,10 +98,9 @@ foreach($resultado as $linha){?>
 <a href="minhasnotificacoesdetalhadas.php?id=<?php echo $linha['idnotificacao']?>" class="btn btn-primary" role="button">Verificar Notificações Enviadas</a>
             <img  src="<?php echo $linha['urlimage'];?>"  width="80" height="80" />
             </div>
-                </div>
                
         </div>
-        
+            
       
    
     </div>
