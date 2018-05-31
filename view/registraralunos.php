@@ -6,15 +6,17 @@
   <title>Gamedu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="apple-icon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-
+ 
+  <link href="../css/listar.css" rel="stylesheet" />
+ 
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+  
   <link rel="stylesheet" href="../assets/css/normalize.css">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../assets/css/themify-icons.css">
   <link rel="stylesheet" href="../assets/scss/style.css">
-
+    
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
 <script>
@@ -67,7 +69,7 @@ listarTodosAlunos();
 
 </script>
 
-<script language="JavaScript" src="js/FormatarDados.js"></script>
+<script language="JavaScript" src="../js/FormatarDados.js"></script>
 <style>
 form{
   margin-left: 25%;
@@ -82,7 +84,7 @@ form{
 
 <?php include '../menu.php';?>
 <!--CONTEUDO AQUI -->
-<form class="form-horizontal" method="GET" action="SelecionarDisciplinas.php" >
+<form class="form-horizontal" method="GET" action="SelecionarDisciplinas.php">
 <fieldset>
 <input type="hidden" name="idDisciplina" id="idDisciplina" value="<?php echo $_GET['disciplinaList'];?>">
 
@@ -143,16 +145,11 @@ if(isset($_SESSION['erromatricula'])){
 
     <div class="form-group">
            
-            <div class="col-sm-5">
 			
              
-<div class="form-group">
-<div class="col-sm-5">
 
- <input type="submit" style="margin-left:250%;margin-top:15%;border-radius:5px;" class="btn btn-primary btn-success" value="cadastrar">     
-	  </div>      
-	  </div>
-	  </div>
+ <input type="submit" style="border-radius:5px;" class="btn btn-primary btn-success btn-lg" value="Cadastrar">     
+	
           </div>
 		  
 		  </form>
@@ -164,11 +161,10 @@ if(isset($_SESSION['erromatricula'])){
 
 <!-- Form Name -->
 
-<div classe="row">
 <!-- Select Basic -->
-<div class="form-group">
-  <label class="col-md-5 control-label" for="selectbasic">Disciplina</label>
-  <div class="col-md-10">
+  <div class="form-control">
+    <label class="col-md-8" for="selectbasic">Listagem de aluno por disciplina</label>
+
     <select id="disciplinaList" name="disciplinaList" class="form-control">
 	<?php
   //Seleciona todas disciplinas e lista no form
@@ -202,8 +198,8 @@ if(isset($_SESSION['erromatricula'])){
 
     <input  type="" ng-click="listarAlunos();" style="border-radius: 5px;margin-top:5%;" class="btn btn-primary btn-info" value="Listar">  
   </div>
-</div>
-</div>
+
+
 </fieldset>
 </form>
 
@@ -309,16 +305,15 @@ $( "#Clique<?php echo $linha["idaluno"]; ?>" ).click(function() {
             <div class="panel panel-default panel-table">
               <div class="panel-heading">
                 <div class="row">
-                  <div class="col col-xs-12">
-                    <h3 class="panel-title">Pesquisa de Aluno</h3>
-                     <input  ng-model="pesquisar" type="text" placeholder="" class="form-control input-md"   >
-                     <br><br>
-                       <h3 class="panel-title">Lista de Alunos</h3>
+                   <span class="input-group-addon fa fa-search"></span>
+                  <div class="col col-md-4" style="padding-left: 0px;">
+                     <input  ng-model="pesquisar" type="text" placeholder="Pesquise por alunos" class="form-control input-md">
+                       
                   </div>
-                  <div class="col col-xs-6 text-right">
-                    
-                  </div>
+                  
                 </div>
+                <br>
+                <h3 class="panel-title">Lista de Alunos</h3>
               </div>
 
 
@@ -385,14 +380,11 @@ $( "#Clique<?php echo $linha["idaluno"]; ?>" ).click(function() {
 
 </body>
 
- <!-- Links -->
-    <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+  <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/js/bootstrap-checkbox-radio-switch.js"></script>
+  <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>
   <script src="../assets/js/plugins.js"></script>
   <script src="../assets/js/main.js"></script>
-
-  <script src="../assets/js/dashboard.js"></script>
-  <script src="../assets/js/widgets.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-	
 
 </html>
