@@ -11,16 +11,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
  <body style="background-color: #2b2e36;">
-            <div class="container" >
+            <div class="container">
                 <div class="row vertical-offset-100" >
-                    <div class="col-md-4 col-md-offset-4">
-                        <div class="panel panel-default" >
+                    <div class="col-md-4 col-md-offset-4" style="padding-top: 150px;">
+                            
                                                            
                                 <div class="row-fluid user-row"">
                                     <img src="img/ifpec.png" class="img-responsive" id="logo"/>
                                 </div>
                             
-                            <div class="panel-body">
+                            <div class="panel-body" style="background-color: #2b2e36;">
                                 <form accept-charset="UTF-8" role="form" class="form-horizontal" action="php/LogarUsuario.php" method="POST">
                                     <fieldset>
                                         <label class="panel-login">
@@ -39,7 +39,7 @@
                                     </fieldset>
                                 </form>
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
