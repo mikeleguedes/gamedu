@@ -7,6 +7,7 @@ try{
 	 $cpf= $_POST['cpfusuario'];
 	 $senha = $_POST['senha'];
 	 $tipousuario_idtipousuario = $_POST['tipousuario_idtipousuario'];
+	 $foto = $_FILES["foto"];
 	
 
 
@@ -52,6 +53,33 @@ $stmt -> bindParam(6,$tipousuario_idtipousuario);
 $stmt->execute(); 
 
 
+
+   //Na página de confirmação de cadastro
+
+$foto = $_FILES["foto"];
+$caminho_imagem = "/img" . $arquivo;
+  
+  // Se não houver nenhum erro
+		if (count($error) == 0) {
+		
+			// Pega extensão da imagem
+			preg_match("/\.(gif|bmp|png|jpg|jpeg){1}$/i", $foto["name"], $ext);
+
+        	// Gera um nome único para a imagem
+        	$nome_imagem = md5(uniqid(time())) . "." . $ext[1];
+
+// Caminho de onde ficará a imagem
+        	$caminho_imagem = "fotos/" . $nome_imagem;
+
+			// Faz o upload da imagem para seu respectivo caminho
+			move_uploaded_file($foto["tmp_name"], $caminho_imagem);
+			
+  try{
+  $stmt= $conexao->prepare("insert into usuario(urlimage) values('".$nome_imagem."')");
+    
+    
+      $stmt->bindValue(, $foto);
+    $stmt->execute();
 
 //Busca o ID do aluno inserido
 

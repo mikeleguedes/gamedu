@@ -19,6 +19,7 @@
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+  <meta http-equiv="refresh" content=2;url='http://www.professornilson.com/mobile/<?php echo $_GET["url"]?>'>
 
 </head>
 <body>

@@ -34,11 +34,22 @@
    echo "<center><h4 style='color:red;'>".$_SESSION['erromatricula']."</h4></center>";
 
    unset( $_SESSION['erromatricula'] );
-    }
+    } 
   ?>
 
   <fieldset>
-     <div class="form-group text-">
+    <div class="form-group">
+       <img src="" class="rounded-circle img-fluid mx-auto d-block"> </div>
+      <div class="form-campos"> <label class="w-100 text-left m-1"></label>
+      <div class="fileUpload btn" style="width: 220px;">
+      <span>Escolha sua foto</span>  
+      <div class="imagem">
+        <input type="file" class="upload" id="foto" name="arquivo" placeholder="Escolha sua foto" accept="image/*">
+
+      </div>
+    </div>
+
+     <div class="form-group">
       <label class="col-md-4 control-label" for="nomeusuario">Nome completo</label>  
       <div class="">
         <input class="form-control input col-md-5" name="nomeusuario" type="text">

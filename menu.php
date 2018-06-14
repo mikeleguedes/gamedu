@@ -13,14 +13,14 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand" href="./">
-               <img src="../img/ifpec.png" width="100" height="100" alt="Logo">
+               <img src="../img/ifpec.png" width="200" height="68" alt="Logo">
            </a>
        </div>
 
-       <div id="main-menu" class="main-menu collapse navbar-collapse">
+       <div id="main-menu" class="main-menu collapse navbar-collapse" style="padding-left: 0px;">
         <ul class="nav navbar-nav">
             <li class="active">
-                <a href="dashboard.php"> <i class="menu-icon fa fa-home"></i>Página Inicial </a>
+                <a href="../view/dashboard.php"> <i class="menu-icon fa fa-home"></i>Página Inicial </a>
             </li>
             <li class="active">
                 <a href="../view/consultarRanking.php"> <i class="menu-icon fa fa-cubes"></i>Ranking de pontuação </a>
@@ -90,7 +90,11 @@
            </div>
             <div class="col-sm-1">
                 <div class="pull-right">
-                    <button type="button" class="btn btn-danger" style="border-radius: 5px;">Sair</button>
+                    <button type="button" class="btn btn-danger" style="border-radius: 5px;">
+                        <a href="../php/Sair.php" style="color: #ffffff;"> 
+                                Sair
+                        </a>        
+                    </button>
                 </div>
             </div>
          </div>
