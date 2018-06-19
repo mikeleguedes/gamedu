@@ -18,7 +18,8 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
  <style>
  form{
-  margin-left: 45%;
+  margin-left: 50%;
+  margin-right: 50%;
  } 
 </style> 
 </head>
@@ -56,7 +57,7 @@
 
         <!-- Select Basic -->
         <div class="form-group">
-          <label class="col-md-7 control-label" for="selectbasic">Turma</label>
+          <label class="col-md-7 " for="selectbasic">Turma</label>
             <select name="turmaList" class="form-control"> 
              <?php
   //Seleciona todas disciplinas e lista no form
@@ -132,7 +133,7 @@ if(isset($_GET['disciplinaList'])){
   ?>
 
 
-  <div class="col-md-10 col-md-offset-1">
+  <div class="col-md-12 col-md-offset-1">
 
     <div class="panel panel-default panel-table">
       <div class="panel-heading">
@@ -212,7 +213,7 @@ if(isset($_GET['disciplinaList'])){
 
 
 
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-12 col-md-offset-1">
 
       <div class="panel panel-default panel-table">
         <div class="panel-heading">

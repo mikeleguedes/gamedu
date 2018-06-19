@@ -57,6 +57,7 @@ include '../php/Conexao.php';
  
 
 <div class="container">
+  <!-- implementar filtro de pesquisa 
           <div class="row pull-right">
            <div id="custom-search-input">
               <div class="input-group col-md-12">
@@ -69,6 +70,7 @@ include '../php/Conexao.php';
               </div>
             </div>
           </div>
+  !-->        
         </div>
 
   

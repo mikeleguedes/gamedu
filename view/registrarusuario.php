@@ -17,9 +17,11 @@
 
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+  
 <style>
  form{
-  margin-left: 25%;
+  margin-left: 30%;
  } 
 </style>
 </head>
@@ -38,17 +40,6 @@
   ?>
 
   <fieldset>
-    <div class="form-group">
-       <img src="" class="rounded-circle img-fluid mx-auto d-block"> </div>
-      <div class="form-campos"> <label class="w-100 text-left m-1"></label>
-      <div class="fileUpload btn" style="width: 220px;">
-      <span>Escolha sua foto</span>  
-      <div class="imagem">
-        <input type="file" class="upload" id="foto" name="arquivo" placeholder="Escolha sua foto" accept="image/*">
-
-      </div>
-    </div>
-
      <div class="form-group">
       <label class="col-md-4 control-label" for="nomeusuario">Nome completo</label>  
       <div class="">
@@ -83,7 +74,7 @@
 
     <div class="form-group">
       <label class="col-md-4 control-label" for="tipousuario_idtipousuario">Tipo de Usuário</label>
-        <select name="tipousuario_idtipousuario" class="form-control input col-md-2" >
+        <select name="tipousuario_idtipousuario" class="form-control input col-md-5" >
          <option >Escolha... </option>
          <option value="1" > Professor</option>
          <option value="2" > Técnico</option>
@@ -92,13 +83,10 @@
    </div>
 
 
-
     <div class="container">
-      <div class="row">  
         <div class="form-group">
-         <input type="submit" style="border-radius: 5px;" class="btn btn-primary btn-success" value="Cadastrar">     
+         <input type="submit" style="border-radius: 5px; margin-left: 12%;" class="btn btn-primary btn-success" value="Cadastrar">
         </div>  
-      </div>
     </div> 
 
   </fieldset>
@@ -114,7 +102,7 @@
         ?>
 
 
- <div class="col-md-10 col-md-offset-1">
+ <div class="col-md-12 col-md-offset-1">
 
             <div class="panel panel-default panel-table">
               <div class="panel-heading">
@@ -139,7 +127,7 @@ if($stmt->rowCount() >0){
 			  
 			  ?>
               <div class="panel-body">
-                <table class="table table-striped table-bordered table-list" id="conteudo">
+                <table class="table table-striped table-bordered " id="conteudo">
                   <thead>
                     <tr>
                         <th><em class="fa fa-cog"></em></th>
@@ -204,7 +192,7 @@ $( "#Clique<?php echo $linha["idusuario"]; ?>" ).click(function() {
 
 
 
- <div class="col-md-10 col-md-offset-1">
+ <div class="col-md-12 col-md-offset-1">
 
             <div class="panel panel-default panel-table">
               <div class="panel-heading">
@@ -227,7 +215,7 @@ if($stmt->rowCount() >0){
 			  
 			  ?>
               <div class="panel-body">
-                <table class="table table-striped table-bordered table-list" id="conteudo">
+                <table class="table table-striped table-bordered" id="conteudo">
                   <thead>
                     <tr>
                         <th><em class="fa fa-cog"></em></th>
@@ -255,7 +243,7 @@ if($stmt->rowCount() >0){
 						   Tem certeza que deseja deletar o Usuário <?php echo ($linha["nomeusuario"]); ?> ? <br>
     <a  id="Clique" class="btn btn-success" href="../php/deletarUsuario.php?idusuario=<?php echo $linha['idusuario']; ?>&nomeusuario=<?php echo $linha['nomeusuario']; ?>"><em class="fa fa-check"></em></a>
 </div>
-<script>
+<script type="text/javascript">
 $( "#Clique<?php echo $linha["idusuario"]; ?>" ).click(function() {
   $("#escondido<?php echo $linha["idusuario"]; ?>").css("display","block");
 });

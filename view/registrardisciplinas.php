@@ -17,8 +17,8 @@
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 <style>
-form{
-margin-left:25%;
+.form-group{
+margin-left:30%;
 
 }
 
@@ -46,7 +46,7 @@ margin-left:25%;
 
 
 </fieldset>
-<button id="singlebutton" name="singlebutton"  style="margin-left:15%;border-radius:5px;"    class="btn btn-success">Cadastrar</button>
+<button id="singlebutton" name="singlebutton"  style="margin-left:40%;border-radius:5px;"    class="btn btn-success">Cadastrar</button>
 </form>
 
 
@@ -62,7 +62,7 @@ margin-left:25%;
    
     <p> </p><p> </p>
     
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12 col-md-offset-1">
 
             <div class="panel panel-default panel-table">
               <div class="panel-heading">

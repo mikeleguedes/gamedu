@@ -77,7 +77,7 @@ margin-left:25%;
    
     <p> </p><p> </p>
     
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12 col-md-offset-1">
 
             <div class="panel panel-default panel-table">
               <div class="panel-heading">
