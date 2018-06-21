@@ -28,7 +28,7 @@ location.href='../view/mensagem.php?msg=Alterado&url=registrardisciplinas.php'
 		
 	}else{
 	 echo '<script>
-			alert("Não foi possivel alterar usuario.");
+			alert("Você não fez nenhuma alteração");
 			location.href="../view/registrardisciplinas.php"
 		</script>';
 	}
