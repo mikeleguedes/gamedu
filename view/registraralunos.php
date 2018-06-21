@@ -139,8 +139,8 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
 
-    <input type="submit" style="border-radius:5px;margin-left: 12%;" class="btn btn-primary btn-success btn-lg" value="Cadastrar">
-
+    <input type="submit" style="border-radius:5px;margin-left: 14%;" class="btn btn-primary btn-success btn-lg" value="Cadastrar">
+<br> <br>
     <div class="container">
       <div class="row">
 
@@ -184,7 +184,7 @@
 
         </select>
 
-        <input  type="" ng-click="listarAlunos();" style="border-radius: 5px;margin-top:5%;" class="btn btn-primary btn-info" value="Listar">  
+        <input  type="" ng-click="listarAlunos();" style="border-radius: 5px;margin-top:5%; margin-left: 9%;" class="btn btn-primary btn-info" value="Listar">  
 
       </fieldset>
     </form>
