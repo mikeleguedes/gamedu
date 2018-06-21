@@ -44,115 +44,7 @@ include '../php/Conexao.php';
    <script type="text/javascript">
 
       
- $(function () {
-
-            $('body').on('click', '.list-group .list-group-item', function () {
-                $(this).toggleClass('active');
-            });
-            $('.list-arrows button').click(function () {
-                var $button = $(this), actives = '';
-                if ($button.hasClass('move-left')) {
-                    actives = $('.list-right ul li.active');
-                    actives.clone().appendTo('.list-left ul');
-                    actives.remove();
-                } else if ($button.hasClass('move-right')) {
-                    actives = $('.list-left ul li.active');
-                    actives.clone().appendTo('.list-right ul');
-                    actives.remove();
-                }
-            });
-            $('.dual-list .selector').click(function () {
-                var $checkBox = $(this);
-                if (!$checkBox.hasClass('selected')) {
-                    $checkBox.addClass('selected').closest('.well').find('ul li:not(.active)').addClass('active');
-                    $checkBox.children('i').removeClass('glyphicon-unchecked').addClass('glyphicon-check');
-                } else {
-                    $checkBox.removeClass('selected').closest('.well').find('ul li.active').removeClass('active');
-                    $checkBox.children('i').removeClass('glyphicon-check').addClass('glyphicon-unchecked');
-                }
-            });
-            $('[name="SearchDualList"]').keyup(function (e) {
-                var code = e.keyCode || e.which;
-                if (code == '9') return;
-                if (code == '27') $(this).val(null);
-                var $rows = $(this).closest('.dual-list').find('.list-group li');
-                var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
-                $rows.show().filter(function () {
-                    var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-                    return !~text.indexOf(val);
-                }).hide();
-            });
-
-        });
-
-$(document).ready(function() {
-    $("#disciplina").change(function() {
-        // executa uma ação qualquer
-     
-          $.ajax({
-              url: "http://www.ifpe.esy.es/mobile/PaginaWeb/AlunosDisciplina.php",
-              type: "post",
-              data: { 
-                 id: $('#disciplina').val()
-                    },
-               success: function (response) {
-                   $('#listaAlunos').html(response);
-                   $('#listaselecionada').html("");
-                 
-                 }     
-          });
-    });
-
-
-      var retornosubmit = false;
-
-      $("#formpush").submit(function () {
-          return retornosubmit;
-      });
-
-
-        
-    
-
-
-      $('button[type="button"]').on('click', function(){
-        // e aqui, o this é o botão clicado
-          var id = this.id;
-          //alert(id);
-          if(id == "btnpush"){
-              retornosubmit = true;
-          }
-        event.preventDefault();
-        var arrayObj = new Array();
-        var checkedItems = {}, counter = 0;
-        $("#listaselecionada li").each(function(idx, li) {
-            checkedItems[counter] = $(li).val();
-            counter++;
-            var obj= new Object();
-
-             obj.id = $(li).val();
-             arrayObj.push(obj);
-
-    
-
-        });
-        $("#codigo").val(JSON.stringify(arrayObj));
-        $('#display-json').html(JSON.stringify(arrayObj));
-             var classes = this.classList;
-   
-      });
-
-       $("#btnpush").click(function () {
-         $("#btnpush").attr("disabled", false);
-         $("#formpush").submit();
-      });
-
-
-});
-
-
-
-
+ 
     </script>
     <style>
     #view-source {
@@ -285,11 +177,10 @@ include '../php/Conexao.php';
 foreach($resultado as $linha){?> 
 
 <!--CONTEUDO AQUI -->
-<div class="row">
-   <div class="col-md-12"><?php echo $linha['titulonotificacao'];?></div>
+<div class="row" style="margin-right: 40px; margin-bottom: 3px;">
     <!-- Begin of rows -->
-    <div class="row carousel-row">
-        <div class="col-md-12 slide-row">
+    
+        <div class="col-md-12 slide-row" style="margin-left:30px;">
             
               <!-- Indicators -->
               
@@ -303,6 +194,8 @@ foreach($resultado as $linha){?>
                 
              <input type="hidden" id="idaluno" name="idaluno" value="<?php echo $linha['idaluno']?>"></input>
             </div>
+                 <div class="col-md-12">  <?php echo $linha['titulonotificacao'];?></div>
+
             <div class="col-md-6">
                 <h4><?php echo $linha['nomealuno'];?></h4>
  
@@ -336,7 +229,7 @@ foreach($resultado as $linha){?>
                 </span>
             </div>
         </div>
-    </div>
+
    
 </div>
 
