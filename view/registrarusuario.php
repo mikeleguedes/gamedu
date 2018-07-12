@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="br">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,17 +18,42 @@
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
-  
+ <script type="text/javascript">
+
+    function PreviewImage() { 
+        var oFReader = new FileReader(); 
+        oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+        oFReader.onload = function (oFREvent) { 
+            document.getElementById("uploadPreview").src = oFREvent.target.result; 
+        }; 
+    };
+
+</script>
+
 <style>
- form{
-  margin-left: 30%;
- } 
+ #uploadImage {
+  display: none;
+}
+.btn-file {
+  padding: 10px;
+  margin-left: 25%;
+  margin-top: 5%;
+  border-radius: 5px;
+  line-height: 10px;
+  text-align: center;
+}
+ #uploadPreview{
+  width: 200px; 
+  height: 200px; 
+  border-radius: 100px;
+ }
 </style>
 </head>
 <body>
  <?php include '../menu.php';?>
 
-<form class="form-horizontal" method="post" action="../php/CadastrarUsuario.php" >
+<form class="form-horizontal" method="post" enctype="multipart/form-data" action="../php/CadastrarUsuario.php" >
 
   <?php 
       //Erros gerados no cadastro/alteração
@@ -38,6 +63,16 @@
    unset( $_SESSION['erromatricula'] );
     } 
   ?>
+
+<div class="container">
+  <div class="col-md-3">      
+      <img id="uploadPreview" /> 
+    <div class="row">
+      <label for="uploadImage" class="btn btn-primary btn-file">Carregar</label>
+      <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();" /> 
+    </div>
+  </div>
+</div>  
 
   <fieldset>
      <div class="form-group">
